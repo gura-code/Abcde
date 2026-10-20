@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Modulo di Contatto</title>
+  
+  <style>
+    /* STILE CSS DEL MODULO */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f9;
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .modulo-contatto {
+      background-color: #ffeef8; /* Fondo rosa chiaro */
+      border: 2px dashed #ffb3d9; /* Bordo a tratteggio stile scrapbook */
+      padding: 25px;
+      border-radius: 20px;
+      width: 100%;
+      max-width: 400px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .modulo-contatto h3 {
+      color: #d63384;
+      margin-top: 0;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    .modulo-contatto label {
+      font-size: 14px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .modulo-contatto input, 
+    .modulo-contatto textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 15px;
+      border: 1px solid #ffcae5;
+      border-radius: 10px;
+      box-sizing: border-box; /* Mantiene le dimensioni corrette */
+      font-family: inherit;
+      font-size: 14px;
+      outline: none;
+    }
+
+    .modulo-contatto input:focus, 
+    .modulo-contatto textarea:focus {
+      border-color: #ff80bf;
+      background-color: #fff;
+    }
+
+    .modulo-contatto button {
+      width: 100%;
+      background-color: #ffb3d9;
+      color: #5a0033;
+      border: none;
+      padding: 12px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 15px;
+      transition: background-color 0.2s ease;
+    }
+
+    .modulo-contatto button:hover {
+      background-color: #ff80bf;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- STRUTTURA HTML DEL MODULO -->
+  <div class="modulo-contatto">
+    <h3>Lasciami un messaggio! ✉️</h3>
+    
+    <form action="https://formsubmit.co/Guraseesk21@gmail.com" method="POST">
+      
+      <!-- Campo per la mail di chi ti scrive -->
+      <label for="email">La tua Email:</label>
+      <input type="email" id="email" name="email" placeholder="nome@esempio.com" required>
+      
+      <!-- Campo per il messaggio -->
+      <label for="messaggio">Il tuo Messaggio:</label>
+      <textarea id="messaggio" name="message" rows="5" placeholder="Scrivi qui il tuo messaggio..." required></textarea>
+      
+      <!-- Pulsante di invio -->
+      <button type="submit">Invia Messaggio ✨</button>
+      
+    </form>
+  </div>
+
+</body>
+</html>
